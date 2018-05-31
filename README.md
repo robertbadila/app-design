@@ -80,7 +80,7 @@ home/
 
 Containers are used to connect the component to redux and are marked with `_` as a standard. In this example `_home.ts` is the container of the Home component.
 `Home.tsx` is the component itself.
-`home.scss` is an optional file with stiles for the component.
+`home.scss` is an optional file with styles for the component.
 
 ##### 3. Auth logic
 
