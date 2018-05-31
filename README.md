@@ -1,6 +1,6 @@
-## Blank
+## Blank 
 Boilerplate project with integrations already done.
-`React` `Redux` `Typescrpt` `Firebase` `Sass`
+`React` `Redux` `Typescript` `Firebase` `Sass`
 
 Other packages and tools used: `Material UI` `Redux Form` `Grid styled`
 
