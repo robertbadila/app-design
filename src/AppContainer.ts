@@ -11,7 +11,7 @@ export interface DispatchProps {
 
 export interface OwnProps { }
 
-export default connect<StateProps, DispatchProps, OwnProps>(
+export default connect<{}, DispatchProps, {}>(
   (state: ApplicationState) => {
     return {};
   }, {

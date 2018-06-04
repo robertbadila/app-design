@@ -18,8 +18,6 @@ export interface DispatchProps {
   login: (user: any) => Function;
 }
 
-export interface OwnProps { }
-
 export default connect<StateProps, DispatchProps, OwnProps>(
   (state: ApplicationState) => {
     return {
