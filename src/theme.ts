@@ -2,7 +2,6 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {
   cyan500,
   darkBlack, 
-  deepPurple600,
   fullBlack,
   grey100, 
   grey300, 
@@ -15,7 +14,7 @@ import {
 const theme = getMuiTheme({
   palette: {
     textColor: darkBlack,
-    primary1Color: deepPurple600,
+    primary1Color: '#6b7c93',
     primary2Color: 'rgb(99, 116, 161)',
     primary3Color: grey400,
     accent1Color: pinkA200,

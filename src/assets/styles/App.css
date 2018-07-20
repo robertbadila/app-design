@@ -5,7 +5,8 @@
 
 .register {
   width: 400px;
-  position: relative; }
+  position: relative;
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75); }
   .register .box-content {
     padding: 5px 30px 30px 30px;
     text-align: center;
@@ -17,18 +18,11 @@
   .register .input-wrap {
     margin-bottom: 10px; }
   .register footer {
-    padding: 20px;
     font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
     background-color: #eee; }
-  .register .styledRouterLink {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    flex: 1;
-    justify-content: center; }
   .register .logo-wrap {
     position: absolute;
     top: -40px; }
@@ -38,10 +32,23 @@
   .register .error {
     color: crimson;
     margin: 5px 0; }
+  .register .register-link {
+    text-decoration: none;
+    padding: 20px;
+    transition: all .1s linear; }
+  .register .register-link:visited {
+    color: inherit; }
+  .register .register-link:hover {
+    background-color: rgba(197, 210, 226, 0.5);
+    color: #444444; }
+  .register .h4 {
+    font-weight: 400;
+    font-size: 20px; }
 
 .login {
   width: 400px;
-  position: relative; }
+  position: relative;
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75); }
   .login .box-content {
     padding: 5px 30px 30px 30px;
     text-align: center;
@@ -53,18 +60,11 @@
   .login .input-wrap {
     margin-bottom: 10px; }
   .login footer {
-    padding: 20px;
     font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: #eee; }
-  .login .styledRouterLink {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    flex: 1;
-    justify-content: center; }
   .login .logo-wrap {
     position: absolute;
     top: -40px; }
@@ -74,14 +74,30 @@
   .login .error {
     color: crimson;
     margin: 5px 0; }
+  .login .login-link {
+    text-decoration: none;
+    position: relative;
+    padding: 20px;
+    transition: all .1s linear; }
+  .login .login-link:visited {
+    color: inherit; }
+  .login .login-link:hover {
+    background-color: rgba(197, 210, 226, 0.5);
+    color: #444444; }
+  .login .h4 {
+    font-weight: 400;
+    font-size: 20px; }
 
 .reset-password {
   width: 400px;
-  position: relative; }
+  position: relative;
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 2px; }
   .reset-password .box-content {
     padding: 5px 30px 30px 30px;
     text-align: center;
-    background: #fff; }
+    background: #fff;
+    border-radius: 2px 2px 0 0; }
   .reset-password .box-header {
     color: #6b7c93;
     text-align: center;
@@ -89,18 +105,12 @@
   .reset-password .input-wrap {
     margin-bottom: 10px; }
   .reset-password footer {
-    padding: 20px;
     font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #eee; }
-  .reset-password .styledRouterLink {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    flex: 1;
-    justify-content: center; }
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    background-color: #eee;
+    border-radius: 0 0 2px 2px; }
   .reset-password .logo-wrap {
     position: absolute;
     top: -40px; }
@@ -110,6 +120,229 @@
   .reset-password .error {
     color: crimson;
     margin: 5px 0; }
+  .reset-password .reset-link {
+    text-decoration: none;
+    padding: 20px;
+    transition: all .1s linear; }
+  .reset-password .reset-link:visited {
+    color: inherit; }
+  .reset-password .reset-link:hover {
+    background-color: rgba(197, 210, 226, 0.5);
+    color: #444444; }
+  .reset-password .h4 {
+    font-weight: 400;
+    font-size: 20px; }
+
+.TaskTable {
+  margin: 0 20px;
+  border: 2px solid #f3f5fc;
+  border-radius: 5px; }
+  .TaskTable tr th {
+    font-weight: 600 !important;
+    color: #5d6798 !important;
+    text-align: center !important; }
+  .TaskTable tbody {
+    background: #f4f9ff !important; }
+    .TaskTable tbody tr:hover {
+      background: rgba(140, 165, 212, 0.07) !important; }
+    .TaskTable tbody tr td {
+      font-size: 12px !important;
+      color: #555e88 !important;
+      text-align: center !important; }
+    .TaskTable tbody tr .table-actions {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center; }
+      .TaskTable tbody tr .table-actions .table-button-wrapper {
+        position: relative;
+        top: -3px;
+        align-self: center; }
+        .TaskTable tbody tr .table-actions .table-button-wrapper button {
+          width: 30px !important;
+          height: 30px !important; }
+          .TaskTable tbody tr .table-actions .table-button-wrapper button svg {
+            width: 18px !important;
+            height: 18px !important;
+            fill: #555e88 !important; }
+          .TaskTable tbody tr .table-actions .table-button-wrapper button span {
+            position: relative;
+            top: 6px !important;
+            left: 6px !important; }
+    .TaskTable tbody tr .red {
+      background: #ffd6d6 !important;
+      color: #964646 !important;
+      padding: 7px 16px;
+      border-radius: 15px;
+      border: 1px solid rgba(150, 70, 70, 0.27) !important; }
+    .TaskTable tbody tr .green {
+      background: #ddffe8 !important;
+      color: #469660 !important;
+      padding: 7px 16px;
+      border-radius: 15px;
+      border: 1px solid rgba(70, 150, 96, 0.27) !important; }
+  .TaskTable .button-wrapper {
+    position: absolute;
+    top: 17px;
+    right: 20px; }
+    .TaskTable .button-wrapper button {
+      padding: 0 !important;
+      height: 24px !important;
+      width: 24px !important; }
+    .TaskTable .button-wrapper svg {
+      height: 15px !important;
+      width: 15px !important;
+      fill: #5d6798 !important; }
+    .TaskTable .button-wrapper span {
+      position: relative;
+      top: 4px !important;
+      left: 4px !important;
+      height: 16px !important;
+      width: 16px !important; }
+  .TaskTable .popover-wrapper {
+    position: relative;
+    top: 20px; }
+  .TaskTable .task-dropdown-wrapper svg {
+    height: 15px !important;
+    width: 15px !important;
+    fill: #5d6798 !important; }
+
+.Home .dashboard-content {
+  margin-left: 210px;
+  margin-top: 60px;
+  margin-right: 10px; }
+  .Home .dashboard-content .see-all-wrapper {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 20px); }
+
+.user-card {
+  position: absolute;
+  margin-top: 50px;
+  text-align: center; }
+  .user-card .avatar-wrapper {
+    position: relative;
+    padding-top: 20px;
+    left: 37px; }
+    .user-card .avatar-wrapper .user-avatar {
+      border: 3px solid rgba(255, 255, 255, 0.3) !important; }
+  .user-card .user-name {
+    position: relative;
+    top: -53px;
+    left: 37px;
+    color: #474747;
+    font-size: 14px; }
+  .user-card .settings-wrapper {
+    position: relative;
+    top: -40px;
+    left: 80px; }
+    .user-card .settings-wrapper .settings-button {
+      background-color: #f2f8ff !important;
+      height: 25px !important;
+      width: 25px !important;
+      border: 1px solid transparent !important;
+      border-radius: 50%; }
+      .user-card .settings-wrapper .settings-button svg {
+        position: relative !important;
+        left: -11px;
+        top: -11px;
+        height: 22px !important;
+        width: 22px !important;
+        fill: #474747 !important; }
+
+aside.sidenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  overflow: hidden;
+  width: 200px;
+  background-color: #e2eeff; }
+  aside.sidenav .menu-toggle {
+    background: rgba(69, 75, 86, 0.2);
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 50px; }
+  aside.sidenav .logo-wrap {
+    max-width: 160px;
+    margin-left: 30px;
+    margin-top: 10px; }
+  aside.sidenav .logo {
+    padding-right: 9px;
+    width: 80%; }
+  aside.sidenav .img {
+    max-width: 100%; }
+  aside.sidenav .flat-button {
+    display: flex;
+    flex: 1; }
+    aside.sidenav .flat-button .menu-item {
+      text-decoration: none;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      padding-left: 25px; }
+      aside.sidenav .flat-button .menu-item .button-text {
+        margin-top: 5px;
+        display: flex;
+        flex: 1;
+        margin-left: 10px;
+        color: #95aac6 !important; }
+      aside.sidenav .flat-button .menu-item svg {
+        fill: #95aac6 !important; }
+  aside.sidenav .flat-button:hover {
+    background-color: rgba(0, 0, 0, 0.07) !important; }
+    aside.sidenav .flat-button:hover .button-text {
+      color: #65768e !important; }
+    aside.sidenav .flat-button:hover svg {
+      fill: #65768e !important; }
+  aside.sidenav .flat-button:focus {
+    background-color: rgba(232, 242, 255, 0.4) !important; }
+  aside.sidenav .add-task-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-30%);
+    top: 40px; }
+
+header {
+  position: absolute;
+  top: 0;
+  height: 49px;
+  width: 100%;
+  border-bottom: 1px solid #d9dde2;
+  z-index: 3;
+  background: #f4f9ff;
+  display: flex;
+  align-items: center; }
+  header .appbar-items {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 6px;
+    max-width: 100%; }
+    header .appbar-items .badge .appbar-button span {
+      display: none; }
+    header .appbar-items .badge .appbar-button svg {
+      height: 20px !important;
+      width: 20px !important;
+      fill: #9ba6be !important; }
+    header .appbar-items .badge .notifications {
+      left: -10px; }
+    header .appbar-items .badge .messages {
+      left: -4px; }
+    header .appbar-items .badge span {
+      top: 35px !important;
+      left: 5px !important;
+      height: 6px !important;
+      width: 6px !important;
+      background-color: #d1b39c !important;
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+    header .appbar-items .badge:hover .appbar-button svg {
+      fill: #4b556b !important; }
+    header .appbar-items .badge:hover span {
+      background-color: #b86c33 !important; }
 
 /* change input's yellow autocompleted style */
 input:-webkit-autofill,
@@ -272,12 +505,14 @@ span {
 
 /* Content - Main area */
 .App-Content {
-  flex: 1;
-  padding: 20px; }
+  flex: 1; }
 
 .public-pages {
   display: flex;
   flex: 1;
-  background: gainsboro;
+  background: #727982;
   justify-content: center;
   align-items: center; }
+
+.login-button button {
+  background: #6b7c93 !important; }

@@ -1,0 +1,82 @@
+.TaskTable {
+  margin: 0 20px;
+  border: 2px solid #f3f5fc;
+  border-radius: 5px; }
+  .TaskTable tr th {
+    font-weight: 600 !important;
+    color: #5d6798 !important;
+    text-align: center !important; }
+  .TaskTable tbody {
+    background: #f4f9ff !important; }
+    .TaskTable tbody tr:hover {
+      background: rgba(140, 165, 212, 0.07) !important; }
+    .TaskTable tbody tr td {
+      font-size: 12px !important;
+      color: #555e88 !important;
+      text-align: center !important; }
+    .TaskTable tbody tr .table-actions {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center; }
+      .TaskTable tbody tr .table-actions .table-button-wrapper {
+        position: relative;
+        top: -3px;
+        align-self: center; }
+        .TaskTable tbody tr .table-actions .table-button-wrapper button {
+          width: 30px !important;
+          height: 30px !important; }
+          .TaskTable tbody tr .table-actions .table-button-wrapper button svg {
+            width: 18px !important;
+            height: 18px !important;
+            fill: #555e88 !important; }
+          .TaskTable tbody tr .table-actions .table-button-wrapper button span {
+            position: relative;
+            top: 6px !important;
+            left: 6px !important; }
+    .TaskTable tbody tr .red {
+      background: #ffd6d6 !important;
+      color: #964646 !important;
+      padding: 7px 16px;
+      border-radius: 15px;
+      border: 1px solid rgba(150, 70, 70, 0.27) !important; }
+    .TaskTable tbody tr .green {
+      background: #ddffe8 !important;
+      color: #469660 !important;
+      padding: 7px 16px;
+      border-radius: 15px;
+      border: 1px solid rgba(70, 150, 96, 0.27) !important; }
+  .TaskTable .button-wrapper {
+    position: absolute;
+    top: 17px;
+    right: 20px; }
+    .TaskTable .button-wrapper button {
+      padding: 0 !important;
+      height: 24px !important;
+      width: 24px !important; }
+    .TaskTable .button-wrapper svg {
+      height: 15px !important;
+      width: 15px !important;
+      fill: #5d6798 !important; }
+    .TaskTable .button-wrapper span {
+      position: relative;
+      top: 4px !important;
+      left: 4px !important;
+      height: 16px !important;
+      width: 16px !important; }
+  .TaskTable .popover-wrapper {
+    position: relative;
+    top: 20px; }
+  .TaskTable .task-dropdown-wrapper svg {
+    height: 15px !important;
+    width: 15px !important;
+    fill: #5d6798 !important; }
+
+.Home .dashboard-content {
+  margin-left: 210px;
+  margin-top: 60px;
+  margin-right: 10px; }
+  .Home .dashboard-content .see-all-wrapper {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 20px); }

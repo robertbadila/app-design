@@ -1,0 +1,15 @@
+@import './tasktable/TaskTable.scss';
+
+.Home{
+  .dashboard-content{
+    margin-left:210px;
+    margin-top:60px;
+    margin-right:10px;
+    .see-all-wrapper{
+      position:relative;
+      top:20px;
+      left:20px;
+      width:calc(100% - 20px);
+    }
+  }
+}

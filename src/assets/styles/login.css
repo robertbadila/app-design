@@ -1,6 +1,7 @@
 .login {
   width: 400px;
-  position: relative; }
+  position: relative;
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75); }
   .login .box-content {
     padding: 5px 30px 30px 30px;
     text-align: center;
@@ -12,18 +13,11 @@
   .login .input-wrap {
     margin-bottom: 10px; }
   .login footer {
-    padding: 20px;
     font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: #eee; }
-  .login .styledRouterLink {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    flex: 1;
-    justify-content: center; }
   .login .logo-wrap {
     position: absolute;
     top: -40px; }
@@ -33,3 +27,16 @@
   .login .error {
     color: crimson;
     margin: 5px 0; }
+  .login .login-link {
+    text-decoration: none;
+    position: relative;
+    padding: 20px;
+    transition: all .1s linear; }
+  .login .login-link:visited {
+    color: inherit; }
+  .login .login-link:hover {
+    background-color: rgba(197, 210, 226, 0.5);
+    color: #444444; }
+  .login .h4 {
+    font-weight: 400;
+    font-size: 20px; }

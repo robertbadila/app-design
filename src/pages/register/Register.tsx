@@ -35,7 +35,7 @@ export default class Login extends React.Component<Props, {}> {
           </div>
           <div className="box-content">
             <div className="box-header">
-              <h6 className="h6">Register</h6>
+              <h4 className="h4">Register</h4>
             </div>
             <form onSubmit={handleSubmit(this.submitForm)}>
               {auth.registerError && (
@@ -65,6 +65,7 @@ export default class Login extends React.Component<Props, {}> {
                 />
               </div>
               <RaisedButton
+                className="login-button"
                 fullWidth={true}
                 type="submit"
                 label="Register"
@@ -74,7 +75,7 @@ export default class Login extends React.Component<Props, {}> {
             </form>
           </div>
           <footer>
-            <Link className="styledRouterLink" to="/login" activeClassName="active">Login</Link>
+            <Link to="/login" className="register-link" activeClassName="active">Login</Link>
           </footer>
         </div>
       </section>

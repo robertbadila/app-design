@@ -1,0 +1,99 @@
+.TaskTable{
+  margin: 0 20px;
+  border: 2px solid #f3f5fc;
+  border-radius: 5px;
+  tr{
+    th{
+      font-weight: 600 !important;
+      color: #5d6798 !important;
+      text-align:center !important;
+    }
+  }
+  tbody{
+    background: #f4f9ff !important;
+    tr:hover{
+      background:rgba(140, 165, 212, 0.07) !important;
+    }
+    tr{
+      td{
+        font-size:12px !important;
+        color: #555e88 !important;
+        text-align:center !important;
+      }
+      .table-actions{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        .table-button-wrapper{
+          position:relative;
+          top:-3px;
+          align-self: center;
+          button{
+            width:30px !important;
+            height:30px !important;
+            svg{
+              width:18px !important;
+              height: 18px !important;
+              fill: #555e88 !important;
+            }
+            span{
+              position:relative;
+              top:6px !important;
+              left:6px !important;
+            }
+          }
+        }
+      }
+      // td .urgency-background{
+      //   padding:5px 10px;
+      // }
+      .red{
+        background: rgb(255, 214, 214) !important;
+        color: #964646 !important;
+        padding:7px 16px;
+        border-radius:15px;
+        border: 1px solid rgba(150, 70, 70, .27) !important;
+      }
+      .green{
+        background: rgb(221, 255, 232) !important;
+        color: #469660 !important;
+        padding:7px 16px;
+        border-radius:15px;
+        border: 1px solid rgba(70, 150, 96, .27) !important;
+      }
+    }
+  }
+  .button-wrapper{
+    position:absolute;
+    top:17px;
+    right:20px;
+    button{
+      padding:0 !important;
+      height:24px !important;
+      width:24px !important;
+    }
+    svg{
+      height:15px !important;
+      width:15px !important;
+      fill: #5d6798 !important;
+    }
+    span{
+      position: relative;
+      top:4px !important;
+      left:4px !important;
+      height:16px !important;
+      width:16px !important;
+    }
+  }
+  .popover-wrapper{
+    position: relative;
+    top:20px;
+  }
+  .task-dropdown-wrapper{
+    svg{
+      height:15px !important;
+      width:15px !important;
+      fill: #5d6798 !important;
+    }
+  }
+}

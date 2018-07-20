@@ -1,0 +1,54 @@
+header {
+  position: absolute;
+  top:0;
+  height:49px;
+  width:100%;
+  border-bottom:1px solid #d9dde2;
+  z-index:3;
+  background:#f4f9ff;
+  display: flex;
+  align-items: center;
+  .appbar-items{
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    right: 6px;
+    max-width:100%;
+      .badge{
+        .appbar-button{
+          span{
+            display:none;
+          }
+          svg{
+            height:20px !important;
+            width:20px !important;
+            fill: #9ba6be !important;
+          }
+        }
+        .notifications{
+          left:-10px;
+        }
+        .messages{
+          left:-4px;
+        }
+        span{
+          top:35px !important;
+          left:5px !important;
+          height:6px !important;
+          width:6px !important;
+          background-color: #d1b39c !important;
+          transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        }
+      }
+      .badge:hover{
+        .appbar-button{
+          svg{
+            fill: #4b556b !important;
+          }
+        }
+        span{
+          background-color: #b86c33 !important;
+        }
+      }
+  }
+}

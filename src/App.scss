@@ -1,5 +1,6 @@
 @import './styles/variables';
 @import './pages/pages.scss';
+@import './layout/layout.scss';
 @import './styles/autocomplete';
 @import './styles/global';
 @import './styles/material-rewrites';
@@ -14,7 +15,6 @@
 
 .App-Content {
   flex: 1;
-  padding: 20px;
   // background: $background;
 }
 
@@ -22,7 +22,11 @@
 .public-pages {
   display: flex;
   flex: 1;
-  background: gainsboro;
+  background: #727982;
   justify-content: center;
   align-items: center;
+}
+
+.login-button button{
+  background: #6b7c93 !important;
 }

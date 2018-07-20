@@ -1,6 +1,7 @@
 .register {
   width: 400px;
   position: relative;
+  box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.75);
   .box-content {
     padding: 5px 30px 30px 30px;
     text-align: center;
@@ -15,19 +16,11 @@
     margin-bottom: 10px;
   }
   footer {
-    padding: 20px;
     font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display:grid;
+    text-align:center;
+    grid-template-columns: 100%;
     background-color: #eee;
-  }
-  .styledRouterLink {
-    color: #333;
-    text-decoration: none;
-    display:flex;
-    flex: 1;
-    justify-content: center;
   }
   .logo-wrap {
     position: absolute;
@@ -40,5 +33,21 @@
   .error {
     color: crimson;
     margin: 5px 0;
+  }
+  .register-link {
+    text-decoration:none;
+    padding:20px;
+    transition: all .1s linear;
+  }
+  .register-link:visited{
+    color: inherit;
+  }
+  .register-link:hover{
+    background-color: rgba(197, 210, 226, .5);
+    color: #444444;
+  }
+  .h4 {
+    font-weight: 400;
+    font-size:20px;
   }
 }

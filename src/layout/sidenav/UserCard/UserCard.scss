@@ -1,0 +1,40 @@
+.user-card {
+  position: absolute;
+  margin-top: 50px;
+  text-align:center;
+  .avatar-wrapper {
+    position:relative;
+    padding-top:20px;
+    left:37px;
+    .user-avatar {
+      border: 3px solid rgba(255,255,255,.3) !important;
+    }
+  }
+  .user-name{
+    position:relative;
+    top:-53px;
+    left:37px;
+    color:#474747;
+    font-size:14px;
+  }
+  .settings-wrapper{
+    position:relative;
+    top:-40px;
+    left:80px;
+    .settings-button{
+      background-color:#f2f8ff !important;
+      height:25px !important;
+      width:25px !important;
+      border:1px solid transparent !important;
+      border-radius:50%;
+      svg {
+        position:relative !important;
+        left: -11px;
+        top: -11px;
+        height:22px !important;
+        width:22px !important;
+        fill:#474747 !important;
+      }
+    }
+  }
+}

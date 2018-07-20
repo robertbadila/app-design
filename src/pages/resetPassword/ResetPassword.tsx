@@ -29,7 +29,7 @@ export default class ResetPasword extends React.Component<Props, OwnProps> {
           </div>
           <div className="box-content">
             <div className="box-header">
-              <h6 className="h6">Reset Password</h6>
+              <h4 className="h4">Reset Password</h4>
             </div>
             {!requestedPasswordReset
               ? <form onSubmit={handleSubmit(this.submitForm)}>
@@ -44,6 +44,7 @@ export default class ResetPasword extends React.Component<Props, OwnProps> {
                   />
                 </div>
                 <RaisedButton
+                  className="login-button"
                   fullWidth={true}
                   type="submit"
                   label="Reset"
@@ -54,7 +55,7 @@ export default class ResetPasword extends React.Component<Props, OwnProps> {
               : <p>Follow the link we sent via email to reset your password.</p>}
           </div>
           <footer>
-            <Link to="/login" className="styledRouterLink" activeClassName="active">Login</Link>
+            <Link to="/login" className="reset-link" activeClassName="active">Login</Link>
           </footer>
         </div>
       </section>

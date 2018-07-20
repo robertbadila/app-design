@@ -1,6 +1,7 @@
 .register {
   width: 400px;
-  position: relative; }
+  position: relative;
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75); }
   .register .box-content {
     padding: 5px 30px 30px 30px;
     text-align: center;
@@ -12,18 +13,11 @@
   .register .input-wrap {
     margin-bottom: 10px; }
   .register footer {
-    padding: 20px;
     font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
     background-color: #eee; }
-  .register .styledRouterLink {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    flex: 1;
-    justify-content: center; }
   .register .logo-wrap {
     position: absolute;
     top: -40px; }
@@ -33,3 +27,12 @@
   .register .error {
     color: crimson;
     margin: 5px 0; }
+  .register .register-link {
+    text-decoration: none;
+    padding: 20px;
+    transition: all .1s linear; }
+  .register .register-link:visited {
+    color: inherit; }
+  .register .register-link:hover {
+    background-color: rgba(197, 210, 226, 0.5);
+    color: #444444; }
