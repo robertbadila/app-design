@@ -43,7 +43,7 @@ export default class TaskTable extends React.PureComponent<Props, OtherProps> {
           assignee: 'Alejandro Fields',
           unit: '103',
           urgency: 'HIGH',
-          created: '12/02./2018',
+          created: '12/02/2018',
           status:'IN PROGRESS' 
         },
         {
@@ -84,10 +84,18 @@ export default class TaskTable extends React.PureComponent<Props, OtherProps> {
           <TableRowColumn>{row.summary}</TableRowColumn>
           <TableRowColumn>{row.assignee}</TableRowColumn>
           <TableRowColumn>{row.unit}</TableRowColumn>
-          <TableRowColumn><span className={`urgency-background` && row.urgency === "HIGH" ? `red` : `green`}>{row.urgency}</span></TableRowColumn>
+          <TableRowColumn>
+            <span className={`urgency-background` && row.urgency === "HIGH" ? `red` : `green`}>
+              {row.urgency}
+            </span>
+          </TableRowColumn>
           <TableRowColumn>{row.created}</TableRowColumn>
           <TableRowColumn>{row.status}</TableRowColumn>
-          <TableRowColumn><h2><TableActions /></h2></TableRowColumn>
+          <TableRowColumn>
+            <h2>
+              <TableActions />
+            </h2>
+          </TableRowColumn>
         </TableRow>
       )
     })
@@ -107,7 +115,11 @@ export default class TaskTable extends React.PureComponent<Props, OtherProps> {
             <TableHeaderColumn>
               URGENCY
               <div className="button-wrapper">
-                <IconButton onTouchTap={this.handleTouchTap}>
+                <IconButton 
+                            // tooltip="order by"
+                            // tooltipPosition="top-left"
+                            // tooltipStyles={{fontSize:'12px', color:'#f4f4f4'}}
+                            onTouchTap={this.handleTouchTap}>
                   <ArrowDropDown/>
                 </IconButton>
               </div>

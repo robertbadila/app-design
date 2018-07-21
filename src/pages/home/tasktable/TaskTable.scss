@@ -17,7 +17,7 @@
     tr{
       td{
         font-size:12px !important;
-        color: #555e88 !important;
+        color: #7e8ccc !important;
         text-align:center !important;
       }
       .table-actions{
@@ -34,7 +34,7 @@
             svg{
               width:18px !important;
               height: 18px !important;
-              fill: #555e88 !important;
+              fill: #7e8ccc !important;
             }
             span{
               position:relative;
@@ -50,16 +50,20 @@
       .red{
         background: rgb(255, 214, 214) !important;
         color: #964646 !important;
-        padding:7px 16px;
+        padding:3px 18px;
         border-radius:15px;
         border: 1px solid rgba(150, 70, 70, .27) !important;
+        font-weight:600;
+        font-size:12px;
       }
       .green{
         background: rgb(221, 255, 232) !important;
         color: #469660 !important;
-        padding:7px 16px;
+        padding:3px 18px;
         border-radius:15px;
         border: 1px solid rgba(70, 150, 96, .27) !important;
+        font-weight:600;
+        font-size:12px;
       }
     }
   }
@@ -83,6 +87,17 @@
       left:4px !important;
       height:16px !important;
       width:16px !important;
+    }
+    div{
+      top :-5px !important;
+      div{
+        span{
+          left:0px !important;
+          top:0px !important;
+          color:#f4f4f4 !important;
+          font-size:10px !important;
+        }
+      }
     }
   }
   .popover-wrapper{

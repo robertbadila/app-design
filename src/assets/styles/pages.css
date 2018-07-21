@@ -147,7 +147,7 @@
       background: rgba(140, 165, 212, 0.07) !important; }
     .TaskTable tbody tr td {
       font-size: 12px !important;
-      color: #555e88 !important;
+      color: #7e8ccc !important;
       text-align: center !important; }
     .TaskTable tbody tr .table-actions {
       display: grid;
@@ -163,7 +163,7 @@
           .TaskTable tbody tr .table-actions .table-button-wrapper button svg {
             width: 18px !important;
             height: 18px !important;
-            fill: #555e88 !important; }
+            fill: #7e8ccc !important; }
           .TaskTable tbody tr .table-actions .table-button-wrapper button span {
             position: relative;
             top: 6px !important;
@@ -171,15 +171,19 @@
     .TaskTable tbody tr .red {
       background: #ffd6d6 !important;
       color: #964646 !important;
-      padding: 7px 16px;
+      padding: 3px 18px;
       border-radius: 15px;
-      border: 1px solid rgba(150, 70, 70, 0.27) !important; }
+      border: 1px solid rgba(150, 70, 70, 0.27) !important;
+      font-weight: 600;
+      font-size: 12px; }
     .TaskTable tbody tr .green {
       background: #ddffe8 !important;
       color: #469660 !important;
-      padding: 7px 16px;
+      padding: 3px 18px;
       border-radius: 15px;
-      border: 1px solid rgba(70, 150, 96, 0.27) !important; }
+      border: 1px solid rgba(70, 150, 96, 0.27) !important;
+      font-weight: 600;
+      font-size: 12px; }
   .TaskTable .button-wrapper {
     position: absolute;
     top: 17px;
@@ -198,6 +202,13 @@
       left: 4px !important;
       height: 16px !important;
       width: 16px !important; }
+    .TaskTable .button-wrapper div {
+      top: -5px !important; }
+      .TaskTable .button-wrapper div div span {
+        left: 0px !important;
+        top: 0px !important;
+        color: #f4f4f4 !important;
+        font-size: 10px !important; }
   .TaskTable .popover-wrapper {
     position: relative;
     top: 20px; }
