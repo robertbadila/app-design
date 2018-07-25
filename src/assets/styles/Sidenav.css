@@ -75,7 +75,7 @@ aside.sidenav {
       aside.sidenav .flat-button .menu-item svg {
         fill: #95aac6 !important; }
   aside.sidenav .flat-button:hover {
-    background-color: rgba(0, 0, 0, 0.02) !important; }
+    background-color: rgba(0, 0, 0, 0.07) !important; }
     aside.sidenav .flat-button:hover .button-text {
       color: #65768e !important; }
     aside.sidenav .flat-button:hover svg {

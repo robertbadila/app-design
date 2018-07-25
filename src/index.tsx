@@ -27,6 +27,7 @@ export const routeList = {
   authentication: '/authentication',
   dashboard: '/dashboard',
   overview: '/overview',
+
 };
 
 const router = (

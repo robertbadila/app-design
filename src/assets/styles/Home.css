@@ -6,6 +6,8 @@
     font-weight: 600 !important;
     color: #5d6798 !important;
     text-align: center !important; }
+  .TaskTable tr td {
+    padding: 4px !important; }
   .TaskTable tbody {
     background: #f4f9ff !important; }
     .TaskTable tbody tr:hover {
@@ -63,10 +65,11 @@
       fill: #5d6798 !important; }
     .TaskTable .button-wrapper span {
       position: relative;
-      top: 4px !important;
-      left: 4px !important;
+      top: 8px !important;
+      left: 5px !important;
       height: 16px !important;
-      width: 16px !important; }
+      width: 16px !important;
+      display: none; }
     .TaskTable .button-wrapper div {
       top: -5px !important; }
       .TaskTable .button-wrapper div div span {
@@ -82,11 +85,16 @@
     width: 15px !important;
     fill: #5d6798 !important; }
 
-.Home .dashboard-content {
+.Home .home-content {
   margin-left: 210px;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-right: 10px; }
-  .Home .dashboard-content .see-all-wrapper {
+  .Home .home-content .cards-grid {
+    margin: 0 20px;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr; }
+  .Home .home-content .see-all-wrapper {
     position: relative;
     top: 20px;
     left: 20px;

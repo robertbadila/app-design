@@ -92,8 +92,10 @@ header {
   position: absolute;
   top: 0;
   height: 49px;
-  width: 100%;
+  left: 200px;
+  width: calc(100% - 201px);
   border-bottom: 1px solid #d9dde2;
+  border-left: 1px solid #d9dde2;
   z-index: 3;
   background: #f4f9ff;
   display: flex;

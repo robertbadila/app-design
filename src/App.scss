@@ -1,6 +1,7 @@
 @import './styles/variables';
 @import './pages/pages.scss';
 @import './layout/layout.scss';
+@import './components/components.scss';
 @import './styles/autocomplete';
 @import './styles/global';
 @import './styles/material-rewrites';
@@ -14,7 +15,10 @@
 /* Content - Main area */
 
 .App-Content {
+  display:flex;
   flex: 1;
+  overflow-x:hidden !important;
+  background: #fbfdff;
   // background: $background;
 }
 

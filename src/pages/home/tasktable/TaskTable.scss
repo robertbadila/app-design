@@ -8,6 +8,9 @@
       color: #5d6798 !important;
       text-align:center !important;
     }
+    td{
+      padding: 4px !important;
+    }
   }
   tbody{
     background: #f4f9ff !important;
@@ -83,10 +86,11 @@
     }
     span{
       position: relative;
-      top:4px !important;
-      left:4px !important;
+      top:8px !important;
+      left:5px !important;
       height:16px !important;
       width:16px !important;
+      display:none;
     }
     div{
       top :-5px !important;
